@@ -1,4 +1,4 @@
-<%--
+<%@ page import="java.util.Date" %><%--
   Created by IntelliJ IDEA.
   User: osnov
   Date: 06.01.2024
@@ -13,10 +13,11 @@
 <body>
     <h1>My first Jsp</h1>
 <p>
-    <%
-        for(int i = 1; i<=10; i++){
-            out.println("<p>" + "Hello World : " + i + "</p>");
-        }
+    <%@ page import="java.util.Date, logic.TestClass" %>
+
+    <% TestClass testClass = new TestClass(); %>
+    <%=
+        new Date() + " <p> " + testClass.getInfo() + "</p>"
     %>
 
 </p>

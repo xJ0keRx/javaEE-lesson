@@ -6,10 +6,14 @@ import java.io.PrintWriter;
 
 public class FirstServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        System.out.println("hello world");
+        System.out.println("User successfully connected!");
+
+        String name = request.getParameter("name");
+        String surname = request.getParameter("surname");
+
         PrintWriter pw = response.getWriter();
         pw.println("<html>");
-        pw.println("<h1> Hello World!!! </h1>");
+        pw.println("<h1> Hello "+ name + " " + surname + "!</h1>");
         pw.println("</html>");
     }
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
