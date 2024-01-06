@@ -14,10 +14,11 @@
     <h1>My first Jsp</h1>
 <p>
     <%
-        java.util.Date now = new java.util.Date();
-        String someString = "Сейчас : " + now;
+        for(int i = 1; i<=10; i++){
+            out.println("<p>" + "Hello World : " + i + "</p>");
+        }
     %>
-    <%= someString %>
+
 </p>
 </body>
 </html>
