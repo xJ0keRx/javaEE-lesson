@@ -8,18 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>First Jsp</title>
+    <title>Test Jsp</title>
 </head>
 <body>
-    <h1>My first Jsp</h1>
-<p>
-    <%@ page import="java.util.Date, logic.TestClass" %>
 
-    <% TestClass testClass = new TestClass(); %>
-    <%=
-        new Date() + " <p> " + testClass.getInfo() + "</p>"
-    %>
+    <h1>My test Jsp</h1>
 
-</p>
 </body>
 </html>
