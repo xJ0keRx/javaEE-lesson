@@ -14,7 +14,7 @@ public class FirstServlet extends HttpServlet {
             count = 1;
         }
         else {
-            session.setAttribute("count", ++coun
+            session.setAttribute("count", ++count);
         }
 
 
